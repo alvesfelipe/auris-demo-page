@@ -1,0 +1,147 @@
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.init {
+    max-height: 100%;
+}
+
+.back {
+    /* background-image: url("../img/videoframe.jpg"); */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+}
+
+/*.video {*/
+    /* background-image: url("../img/VideoAqui.png"); */
+/*    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}*/
+
+/*.overlay {
+    position: absolute;
+    top: -28px;
+    width: 100%;
+    height: 89%;
+    left: 7px;
+    z-index: -100;
+}*/
+
+.video_loop {
+    margin-top: 2%;
+    margin-left: 25%;
+    width: 54%;
+}
+
+.video_loop video {
+	width: 94%;
+	border: 47px solid white;
+	border-radius: 25px;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    float: left;
+    margin-left: 3%;
+    margin-top: 3%;
+    color: #FFFFFF;
+}
+
+.item img {
+    width: auto;
+    height: 170px;
+    max-height: 170px;
+}
+
+/*.carousel-caption {
+    left: -20% !important;
+}
+
+.carousel-caption h3, p {
+	color: #000000;
+}
+
+.carousel-inner {
+    top: 10%;
+    left: 35%;
+}
+
+#myCarousel{
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.carousel_sec {
+	margin-top: 2%;
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: white;
+}
+*/
+.images {
+	/*width: 100%;*/
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	/*max-height: 35%;*/
+	bottom: 0;
+}
+
+.image {
+	max-height: 200px;
+	width: 350px;
+	margin-top: 9%;
+}
+
+.image:hover {
+	opacity: 0.5;
+}
+
+#setas {
+    position: absolute;
+    top: 50%;
+    right: 11%;
+}
+
+#navegar {
+    position: absolute;
+    top: 51%;
+    right: 2%;
+}
+
+#enter {
+    position: absolute;
+    top: 57%;
+    right: 11%;
+}
+
+#escolher {
+    position: absolute;
+    top: 57%;
+    right: 2%;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+
