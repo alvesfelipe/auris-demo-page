@@ -119,6 +119,10 @@ body {
 	opacity: 0.5;
 }
 
+.image::-webkit-media-controls {
+  display:none !important;
+}
+
 /*#setas {
     position: absolute;
     top: 50%;
