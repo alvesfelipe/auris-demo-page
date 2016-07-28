@@ -15,47 +15,71 @@
     <img class="fundo" src="../img/videoframe.jpg" />
     <section class="init back">
       <div class="container-fluid">
-        
         <div class="row">
           <div class="col-sm-12">
             <h1 id="title">Auris</h1>
               <div class="video_loop"> 
-                <video loop muted autoplay poster="img/videoframe.jpg" class="embed-responsive-item">
+                <video id="auris_vid" loop muted autoplay poster="img/videoframe.jpg" class="embed-responsive-item">
                   <source src="img/auris_chair.mp4" type="video/mp4">
                 </video>
               </div>
           </div>
-
           <div class="row">
             <!-- <img id="setas" src="img/setas.png" alt="Setas">
             <img id="navegar" src="img/Navegar.png" alt="Navegar"> -->
             <img id="enter" src="img/Enter.png" alt="Enter">
             <img id="escolher" src="img/Escolher.png" alt="Escolher">
           </div>
-
+        </div>
+        <div class="wrapper row">
+          <div class="images col-sm-12 col-xs-12">
+            <div class="col-sm-offset-1 col-sm-3 col-xs-12">
+              <input id="gonzagas" class="image" type="image" value="submit" src="img/os_gonzagas.jpg" alt="Amor da Gota" onMouseOver="this.src='img/os_gonzagas.jpg'">
+              <p class="subtitle">Os Gonzagas</p>
+              <p class="subtitle_1">Amor da Gota</p>
+            </div>  
+            <div class="col-sm-offset-1 col-sm-3 col-xs-12">
+              <input class="image" id="pereira" class="image" type="image" value="submit" src="img/seu_pereira.jpg" alt="Seu Pereira" onMouseOver="this.src='img/seu_pereira.jpg'">
+              <p class="subtitle">Seu Pereira & Coletivo 401</p>
+              <p class="subtitle_1">Carimbó da Penha</p>
+            </div>  
+            <div class="col-sm-offset-1 col-sm-3 col-xs-12">
+              <input class="image" id="beto" class="image" type="image" value="submit" src="img/beto_brito_.jpg" alt="Beto Brito" onMouseOver="this.src='img/beto_brito_.jpg'">
+              <p class="subtitle">Beto Brito</p>
+              <p class="subtitle_1">Xote Mei-de-Feira</p>
+            </div>  
+          </div>
         </div>
 
-        <div class="images row">
-          <div class="col-sm-offset-1 col-sm-3 col-xs-12">
-            <img class="image" src="img/os_gonzagas.jpg" alt="Amor da Gota">
-            <p class="subtitle">Os Gonzagas</p>
-            <p class="subtitle_1">Amor da Gota</p>
-          </div>  
-          <div class="col-sm-offset-1 col-sm-3 col-xs-12">
-            <img class="image" src="img/seu_pereira.jpg" alt="Chania">
-            <p class="subtitle">Seu Pereira & Coletivo 401</p>
-            <p class="subtitle_1">Carimbó da Penha</p>
-          </div>  
-          <div class="col-sm-offset-1 col-sm-3 col-xs-12">
-            <img class="image" src="img/beto_brito_.jpg" alt="Chania">
-            <p class="subtitle">Beto Brito</p>
-            <p class="subtitle_1">Xote Mei-de-Feira</p>
-          </div>  
-        </div>   
+        <script>
+          var gonzagas, pereira, beto;
+          var vid_gonzagas, vid_pereira, vid_beto;
+
+          gonzagas = document.getElementById("gonzagas");
+          pereira = document.getElementById("pereira");
+          beto = document.getElementById("beto");
+
+          vid_gonzagas = document.getElementById("auris_vid");
+          vid_pereira = document.getElementById("auris_vid");
+          vid_beto = document.getElementById("auris_vid");
+
+          gonzagas.addEventListener("click",toggleFullScreen,false);
+          pereira.addEventListener("click", toggleFullScreen, false);
+          beto.addEventListener("click", toggleFullScreen, false);
+
+          function toggleFullScreen(){
+            if(vid_gonzagas.requestFullScreen){
+              vid_gonzagas.requestFullScreen();
+            } else if(vid_gonzagas.webkitRequestFullScreen){
+              vid_gonzagas.webkitRequestFullScreen();
+            } else if(vid_gonzagas.mozRequestFullScreen){
+              vid.mozRequestFullScreen();
+            }
+          }
+        </script>     
+      
       </div>
     </section>
-
-
 
 
 <!--     <section class="carousel_sec"> 
