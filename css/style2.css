@@ -47,7 +47,7 @@ body {
 .video_loop {
     margin-top: 2%;
     margin-left: 30%;
-    width: 54%;
+    width: 64%;
 }
 
 .video_loop video {
@@ -146,6 +146,13 @@ body {
     top: 52%;
     right: 2%;
 }*/
+
+#logo {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+
+}
 
 .subtitle {
 	font-weight: bold;
