@@ -27,26 +27,9 @@ body {
 	z-index: -100;
 }
 
-/*.video {*/
-    /* background-image: url("../img/VideoAqui.png"); */
-/*    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-}*/
-
-/*.overlay {
-    position: absolute;
-    top: -28px;
-    width: 100%;
-    height: 89%;
-    left: 7px;
-    z-index: -100;
-}*/
-
 .video_loop {
     margin-top: 2%;
-    margin-left: 30%;
+    margin-left: 38%;
     width: 64%;
 }
 
@@ -65,43 +48,10 @@ body {
     color: #FFFFFF;
 }
 
-.item img {
-    width: auto;
-    height: 170px;
-    max-height: 170px;
-}
-
-/*.carousel-caption {
-    left: -20% !important;
-}
-
-.carousel-caption h3, p {
-	color: #000000;
-}
-
-.carousel-inner {
-    top: 10%;
-    left: 35%;
-}
-
-#myCarousel{
-  bottom: 0;
-  width: 100%;
-  left: 0;
-}
-
-.carousel_sec {
-	margin-top: 2%;
-	position: fixed;
-    bottom: 0px;
-    width: 100%;
-    background: white;
-}
-*/
-
 .wrapper {
     position: absolute;
     bottom: 0;
+    max-height: 24%;
 }
 
 .images {
@@ -123,36 +73,12 @@ body {
   display:none !important;
 }
 
-/*#setas {
-    position: absolute;
-    top: 50%;
-    right: 11%;
-}
-
-#navegar {
-    position: absolute;
-    top: 51%;
-    right: 2%;
-}*/
-
-/*#enter {
-    position: absolute;
-    top: 52%;
-    right: 11%;
-}
-
-#escolher {
-    position: absolute;
-    top: 52%;
-    right: 2%;
-}*/
-
 #logo {
     position: absolute;
     max-width: 20%;
     top: 5%;
     left: 2%;
-
+    width: 20%;
 }
 
 .subtitle {
@@ -160,3 +86,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.subtitle_1 {
+    margin-top: -5%;
+}
