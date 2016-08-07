@@ -149,6 +149,7 @@ body {
 
 #logo {
     position: absolute;
+    max-width: 20%;
     top: 5%;
     left: 2%;
 
