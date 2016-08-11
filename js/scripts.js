@@ -3,6 +3,7 @@ var gonzagas, pereira, beto;
 gonzagas = document.getElementById("gonzagas");
 pereira = document.getElementById("pereira");
 beto = document.getElementById("beto");
+auris_vid = document.getElementById("auris_vid");
 
 gonzagas.addEventListener("click",gonzagasFullScreen,false);
 pereira.addEventListener("click", pereiraFullScreen, false);
@@ -60,6 +61,7 @@ function isVideoInFullsreen() {
     gonzagas.load();
     pereira.load();
     beto.load();
+    auris_vid.load();
     httpGet("http://150.165.205.54:5000/api/stop");
   } else if (document.webkitExitFullscreen) {
     gonzagas.webkitExitFullscreen();
@@ -68,6 +70,7 @@ function isVideoInFullsreen() {
     gonzagas.load();
     pereira.load();
     beto.load();
+    auris_vid.load();
     httpGet("http://150.165.205.54:5000/api/stop");
   } else if (document.mozCancelFullScreen) {
     gonzagas.mozCancelFullScreen();
@@ -76,6 +79,7 @@ function isVideoInFullsreen() {
     gonzagas.load();
     pereira.load();
     beto.load();
+    auris_vid.load();
     httpGet("http://150.165.205.54:5000/api/stop");
   }
 }
