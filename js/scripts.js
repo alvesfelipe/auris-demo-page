@@ -20,7 +20,7 @@ function gonzagasFullScreen(){
     gonzagas.mozRequestFullScreen();
     gonzagas.play();
   }
-  httpGet("http://150.165.205.54:5000/api/start/os_gonzagas");
+  //httpGet("http://150.165.205.54:5000/api/start/os_gonzagas");
 }
 
 function pereiraFullScreen(){
@@ -34,7 +34,7 @@ function pereiraFullScreen(){
     pereira.mozRequestFullScreen();
     pereira.play();
   }
-  httpGet("http://150.165.205.54:5000/api/start/seu_pereira");
+  //httpGet("http://150.165.205.54:5000/api/start/seu_pereira");
 }
 
 function betoFullScreen(){
@@ -48,7 +48,7 @@ function betoFullScreen(){
     beto.mozRequestFullScreen();
     beto.play();
   }
-  httpGet("http://150.165.205.54:5000/api/start/beto_brito");
+  //httpGet("http://150.165.205.54:5000/api/start/beto_brito");
 }
 
 document.addEventListener("dblclick", isVideoInFullsreen);
@@ -62,7 +62,7 @@ function isVideoInFullsreen() {
     pereira.load();
     beto.load();
     auris_vid.load();
-    httpGet("http://150.165.205.54:5000/api/stop");
+    //httpGet("http://150.165.205.54:5000/api/stop");
   } else if (document.webkitExitFullscreen) {
     gonzagas.webkitExitFullscreen();
     pereira.webkitExitFullscreen();
@@ -71,7 +71,7 @@ function isVideoInFullsreen() {
     pereira.load();
     beto.load();
     auris_vid.load();
-    httpGet("http://150.165.205.54:5000/api/stop");
+    //httpGet("http://150.165.205.54:5000/api/stop");
   } else if (document.mozCancelFullScreen) {
     gonzagas.mozCancelFullScreen();
     pereira.mozCancelFullScreen();
@@ -80,7 +80,7 @@ function isVideoInFullsreen() {
     pereira.load();
     beto.load();
     auris_vid.load();
-    httpGet("http://150.165.205.54:5000/api/stop");
+    //httpGet("http://150.165.205.54:5000/api/stop");
   }
 }
 
